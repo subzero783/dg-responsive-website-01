@@ -1,0 +1,254 @@
+/* Global CSS */
+body {
+  font-family: "Helvetica", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: unset;
+}
+
+.container {
+  max-width: 1320px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Header section */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+header .column-1 .top-logo {
+  max-width: 124px;
+}
+
+header .column-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .column-2 ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li a {
+  display: block;
+  text-transform: uppercase;
+  margin: 20px 0;
+  transform: matrix(1, 0, -0.267949, 1, 0, 0);
+  color: #fff;
+  font-size: 13px;
+  padding: 11px 15px;
+  line-height: 22px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active,
+header nav ul li a:focus,
+header nav ul li a.active {
+  background-color: #b03333;
+}
+
+header nav ul li a div {
+  transform: matrix(1, 0, 0.267949, 1, 0, 0);
+}
+
+header #top-social-media {
+  margin-left: 20px;
+}
+
+header #top-social-media li {
+  margin-right: 5px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header #top-social-media li img {
+  max-width: 14px;
+}
+
+header #top-social-media li.x-social-media img {
+  max-width: 13px;
+}
+
+header #top-social-media li:last-of-type {
+  margin-right: 0;
+}
+
+/* Hero section */
+#hero {
+  background-image: url("https://canvastemplate.com/demos/football-club/images/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero .container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#hero .column-1 {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero .text-container .subtitle-1 {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  max-width: fit-content;
+  background-color: rgba(248, 249, 250, 0.1);
+  margin-bottom: 24px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
+#hero .text-container h1 {
+  font-size: 66px;
+  font-weight: 800;
+  line-height: 86px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+#hero .text-container .subtitle-2 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero .text-container h1 span {
+  color: #b03333;
+}
+
+#hero .text-container a {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 28px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 16px 48px;
+  background-color: #fff;
+  color: #000;
+  transform: matrix(1, 0, -0.267949, 1, 0, 0);
+  max-width: fit-content;
+  font-family: "Oswald", sans-serif;
+}
+
+#hero .text-container a span {
+  transform: matrix(1, 0, 0.267949, 1, 0, 0);
+}
+
+#hero .text-container a img {
+  max-width: 19px;
+  margin-left: 8px;
+}
+
+#hero .column-2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .column-2 img {
+  max-width: 526px;
+  margin-top: 100px;
+}
+
+/* Banner */
+#banner {
+  background-color: #b03333;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#banner .container {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#banner .banner-text {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  overflow: hidden;
+}
+
+#banner .banner-text h2 {
+  width: 10%;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  padding-right: 10px;
+  z-index: 1;
+  margin-right: 20px;
+  background: #b03333;
+  border-right: 1px solid #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: content-box;
+  animation: scrollLeft 50s linear infinite;
+}
+
+.ticker-container {
+  width: 90%;
+  overflow: hidden;
+}
+
+.ticker .ticker-item {
+  display: inline-block;
+  font-size: 24px;
+  padding: 0 32px;
+  color: #fff;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
